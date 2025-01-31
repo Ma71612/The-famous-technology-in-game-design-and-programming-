@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mario Sameh - Professional Technical Expert">
     <meta name="keywords" content="Mario Sameh, Technical Expert, Professional, Technology">
@@ -23,6 +24,7 @@
         }
         .container {
             width: 80%;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
             background-color: white;
@@ -69,8 +71,12 @@
     </div>
 
     <footer>
-        <p>&copy; 2023 Mario Sameh. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Mario Sameh. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
